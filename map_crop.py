@@ -45,7 +45,7 @@ def crop_map(filename, path = ""):
     if path!= "":
         path += "/"
 
-    crop_name = ''.join(filename.split(".")[:-1])
+    crop_name = '.'.join(filename.split(".")[:-1])
 
     with open(path + str(crop_name) + ".yaml") as f:
         map_data = yaml.safe_load(f)
@@ -70,13 +70,13 @@ def crop_map(filename, path = ""):
         cropped_image.save(path + map_image_file)
         map_data["image"] = map_image_file
         map_data["origin"] = computed_cropped_origin(map_image, bounds, resolution, origin)
-        with open(crop_yaml, "w") as f:
+        with open(path + "/" + crop_yaml, "w") as f:
             yaml.dump(map_data, f)
             print("End of cropping")
 
 
 def main():
-    path = 'cartes'
+    path = 'cartes/burger'
     for mapName in get_files_names('.pgm', path):
         print(mapName)
         crop_map(mapName, path)
@@ -84,4 +84,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-#main()

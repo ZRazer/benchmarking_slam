@@ -50,11 +50,11 @@ def proportion(map_image, mapName="", disp=False):
 
 
 def main():
-    path = 'cartes'
+
     lesStats = []
-    for mapName in get_files_names('.pgm', path):
+    for mapName in get_files_names('.pgm', PATH):
         # Load image data
-        map_image = getImage(mapName, path)
+        map_image = getImage(mapName, PATH)
 
         # Proportion computation
         prop = proportion(map_image, mapName)

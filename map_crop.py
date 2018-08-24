@@ -3,7 +3,7 @@ from PIL import Image
 import math
 from tools import get_files_names
 
-PATH = 'cartes'
+PATH = 'maps'
 
 def find_bounds(map_image):
     x_min = map_image.size[0]

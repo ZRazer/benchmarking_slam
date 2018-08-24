@@ -34,4 +34,5 @@ You can change them by editing the SELECT_PROCESS global parameter in the script
 
 In the end, you will be able to plot graph like this one : 
 
-![docs/clean_benchmarking_load.png]
+![Graph clean benchmarking](docs/clean_benchmarking_load.png)
+Graph of CPU and RAM use of Hector SLAM, GMapping and Google Cartographer

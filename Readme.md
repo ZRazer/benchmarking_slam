@@ -30,4 +30,8 @@ top -b -d 1 > top.txt
 ```   
 
 By default, the script will listen to processes containing the names "hector", "gmapping" and "cartographer_no". 
-You can change them by editing the SELECT_PROCESS global parameter in the script.
+You can change them by editing the SELECT_PROCESS global parameter in the script.  
+
+In the end, you will be able to plot graph like this one : 
+
+![docs/clean_benchmarking_load.png]

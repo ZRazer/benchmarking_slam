@@ -3,6 +3,7 @@ from PIL import Image
 import math
 from tools import get_files_names
 
+PATH = 'cartes'
 
 def find_bounds(map_image):
     x_min = map_image.size[0]
@@ -76,10 +77,9 @@ def crop_map(filename, path = ""):
 
 
 def main():
-    path = 'cartes/burger'
-    for mapName in get_files_names('.pgm', path):
+    for mapName in get_files_names('.pgm', PATH):
         print(mapName)
-        crop_map(mapName, path)
+        crop_map(mapName, PATH)
 
 if __name__ == '__main__':
     main()

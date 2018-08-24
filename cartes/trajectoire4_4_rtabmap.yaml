@@ -1,6 +1,0 @@
-free_thresh: 0.196
-image: trajectoire4_4_rtabmap.pgm
-negate: 0
-occupied_thresh: 0.65
-origin: [-21.505056, -16.804942999999998, 0.0]
-resolution: 0.05

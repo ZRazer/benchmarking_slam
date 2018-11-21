@@ -51,17 +51,17 @@ Graph of CPU and RAM use of Hector SLAM, GMapping and Google Cartographer
 
 ### Python2.7 is able to run these programs but there are some bugs：
 ## [plot_top.py](plot_top.py)
-py27
+py27 Graph of CPU and RAM use of different algorithms
 ![py27](docs/py27.png)
-Graph of CPU and RAM use of different algorithms
-py35
+
+py35 Graph of CPU and RAM use of different algorithms
 ![py35](docs/py35.png)
-Graph of CPU and RAM use of different algorithms
+
 # [metrics.py](metrics.py)
-py27
+py27:
 proportion ranked : [[u'aces_cartographer.pgm', 0], [u'aces_gmapping.pgm', 0], [u'aces_original.pgm', 0], [u'aces_slam.pgm', 0]]
 
-py35
+py35:
 proportion ranked : [['aces_gmapping.pgm', 0.056157280842924415], ['aces_slam.pgm', 0.07968770909621771], ['aces_original.pgm', 0.09663862018003493], ['aces_cartographer.pgm', 0.5007652916030205]]
 
 

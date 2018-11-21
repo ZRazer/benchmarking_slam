@@ -7,9 +7,10 @@ import numpy as np
 import sys
 import matplotlib.pyplot as plt
 
+PATH='maps'
 
 PATH_TO_TXT = os.getcwd() + "/top.txt"
-SELECT_PROCESS = ["original","slam", "slam_gmapp+", "cartograph+"]
+SELECT_PROCESS = ["hector", "gmapping", "cartographer_no"]
 
 class Data:
 	name = ""
@@ -38,8 +39,8 @@ def getCpuAndRam(path_to_txt):
 			for i in range(len(les_data)):
 				if les_data[i].name in line:
 					line_list = line.replace("      ", " ").replace("     ", " ").replace("    ", " ").replace("   ", " ").replace("  ", " ").split(" ")
-					cpu = float(line_list[8].replace(",", "."))
-					ram = float(line_list[9].replace(",", "."))
+					cpu = float(line_list[9].replace(",", "."))
+					ram = float(line_list[10].replace(",", "."))
 					les_data[i].les_cpu.append(cpu)
 					les_data[i].les_ram.append(ram)
 					continue
@@ -65,7 +66,7 @@ def plotDatas(les_data):
 
 def main():
 	print("Starting plot_top. Be sure to have a top.txt file generated with a command like")
-	print("top -b -d 1 > top.txt")
+	print("'top -b -d 1 > top.txt'")
 	print("This example while save the output of top every 1 second into top.txt")
 	print("Be sure to indicate which process you want to listen to, using the SELECT_PROCESS hyperparameter")
 	plotDatas(getCpuAndRam(PATH_TO_TXT))

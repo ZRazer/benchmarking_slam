@@ -5,15 +5,16 @@ Tools and files to evaluate map and localization quality of SLAM technologies
 Project by Paul Asquin for Awabot - Summer 2018 paul.asquin@gmail.com
 
 ### python3 fundamental packages
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip python3-tk python3-pil
+
 pip3 install numpy
+
 pip3 install matplotlib
-sudo apt-get install python3-tk
+
 pip3 install pyyaml
-sudo apt-get install python3-pil
 ### Plot_top.py may need to be slightly modified depending on the system language you are using.
 ### Python2.7 is able to run these programs but there are some bugs
-### Modified by Richard Zander 
+Modified by Richard Zander 
 
 # [map_crop.py](map_crop.py)  
 

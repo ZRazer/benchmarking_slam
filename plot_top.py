@@ -38,7 +38,7 @@ def getCpuAndRam(path_to_txt):
 		for line in f.readlines():
 			for i in range(len(les_data)):
 				if les_data[i].name in line:
-					line_list = line.replace("      ", " ").replace("     ", " ").replace("    ", " ").replace("   ", " ").replace("  ", " ").split(" ")
+					line_list = line.strip().replace("      ", " ").replace("     ", " ").replace("    ", " ").replace("   ", " ").replace("  ", " ").split(" ")
 					cpu = float(line_list[9].replace(",", "."))
 					ram = float(line_list[10].replace(",", "."))
 					les_data[i].les_cpu.append(cpu)

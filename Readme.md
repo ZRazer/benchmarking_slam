@@ -13,7 +13,7 @@ pip3 install matplotlib
 
 pip3 install pyyaml
 ### Plot_top.py may need to be slightly modified depending on the system language you are using.
-### Python2.7 is able to run these programs but there are some bugs
+
 Modified by Richard Zander 
 
 # [map_crop.py](map_crop.py)  
@@ -49,9 +49,21 @@ In the end, you will be able to plot graph like this one :
 ![Graph clean benchmarking](docs/clean_benchmarking_load.png)
 Graph of CPU and RAM use of Hector SLAM, GMapping and Google Cartographer
 
-## py27
+### Python2.7 is able to run these programs but there are some bugs：
+## [plot_top.py](plot_top.py)
+py27
 ![py27](docs/py27.png)
 Graph of CPU and RAM use of different algorithms
-## py35
+py35
 ![py35](docs/py35.png)
 Graph of CPU and RAM use of different algorithms
+# [metrics.py](metrics.py)
+py27
+proportion ranked : [[u'aces_cartographer.pgm', 0], [u'aces_gmapping.pgm', 0], [u'aces_original.pgm', 0], [u'aces_slam.pgm', 0]]
+
+py35
+proportion ranked : [['aces_gmapping.pgm', 0.056157280842924415], ['aces_slam.pgm', 0.07968770909621771], ['aces_original.pgm', 0.09663862018003493], ['aces_cartographer.pgm', 0.5007652916030205]]
+
+
+
+

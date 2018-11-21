@@ -41,7 +41,7 @@ def proportion(map_image, mapName="", disp=False):
                     freeNbr += 1
 
     # Proportion computation
-    prop = wallNbr / (wallNbr + freeNbr)
+    prop = wallNbr / float((wallNbr + freeNbr))
     if disp:
         if mapName != "":
             mapName += " : "

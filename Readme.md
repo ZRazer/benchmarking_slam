@@ -47,7 +47,10 @@ In the end, you will be able to plot graph like this one :
 
 ![Graph clean benchmarking](docs/clean_benchmarking_load.png)
 Graph of CPU and RAM use of Hector SLAM, GMapping and Google Cartographer
+
+## py27
 ![py27](docs/py27.png)
-Graph of CPU and RAM use of Hector SLAM, GMapping and Google Cartographer
+Graph of CPU and RAM use of different algorithms
+## py35
 ![py35](docs/py35.png)
-Graph of CPU and RAM use of Hector SLAM, GMapping and Google Cartographer
+Graph of CPU and RAM use of different algorithms
